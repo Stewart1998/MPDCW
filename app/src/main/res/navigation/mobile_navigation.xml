@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_incidents">
+
+    <fragment
+        android:id="@+id/navigation_twitter"
+        android:name="com.example.trafficscotland.ui.twitter.TwitterFragment"
+        android:label="@string/title_twitter"
+        tools:layout="@layout/fragment_twitter" />
+
+    <fragment
+        android:id="@+id/navigation_incidents"
+        android:name="com.example.trafficscotland.ui.incidents.IncidentsFragment"
+        android:label="@string/title_incidents"
+        tools:layout="@layout/fragment_incidents" />
+
+    <fragment
+        android:id="@+id/navigation_roadworks"
+        android:name="com.example.trafficscotland.ui.roadworks.RoadworksFragment"
+        android:label="@string/title_roadworks"
+        tools:layout="@layout/fragment_roadworks" />
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.example.trafficscotland.ui.map.MapFragment"
+        android:label="@string/title_map"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.trafficscotland.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
