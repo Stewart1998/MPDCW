@@ -1,0 +1,4 @@
+#Thu Apr 16 14:16:06 BST 2020
+base.0=C\:\\Users\\Stewart\\AndroidStudioProjects\\TrafficScotland3\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,111 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.trafficscotland"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:5:5-6:54
+11-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:6:9-51
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE " />
+12-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:7:5-8:67
+12-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:8:9-64
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:9:5-10:65
+13-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:10:9-63
+14
+15    <uses-feature
+15-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:12:5-14:34
+16        android:glEsVersion="0x00020000"
+16-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:13:9-41
+17        android:required="true" />
+17-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:14:9-32
+18
+19    <!-- Include required permissions for Google Maps API to run. -->
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Stewart\.gradle\caches\transforms-2\files-2.1\a9ed8aaed483b33b1021fe1efd2e7709\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+20-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Stewart\.gradle\caches\transforms-2\files-2.1\a9ed8aaed483b33b1021fe1efd2e7709\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+21
+22    <application
+22-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:16:5-42:19
+23        android:allowBackup="true"
+23-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:17:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.1.0] C:\Users\Stewart\.gradle\caches\transforms-2\files-2.1\da95e0dd41fd0c634661df2a0f122634\core-1.1.0\AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:18:9-43
+27        android:label="@string/app_name"
+27-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:19:9-41
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:20:9-54
+29        android:supportsRtl="true"
+29-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:21:9-35
+30        android:testOnly="true"
+31        android:theme="@style/AppTheme" >
+31-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:22:9-40
+32        <meta-data
+32-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:24:9-26:47
+33            android:name="com.google.android.geo.API_KEY"
+33-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:25:13-58
+34            android:value="@string/maps_api" />
+34-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:26:13-45
+35        <meta-data
+35-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:28:9-30:69
+36            android:name="com.google.android.gms.version"
+36-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:29:13-58
+37            android:value="@integer/google_play_services_version" />
+37-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:30:13-66
+38
+39        <uses-library
+39-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:31:9-33:40
+40            android:name="org.apache.http.legacy"
+40-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:32:13-50
+41            android:required="false" />
+41-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:33:13-37
+42
+43        <activity
+43-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:34:9-41:20
+44            android:name="com.example.trafficscotland.MainActivity"
+44-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:35:13-41
+45            android:label="@string/app_name" >
+45-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:36:13-45
+46            <intent-filter>
+46-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:37:13-40:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:38:17-69
+47-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:38:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:39:17-77
+49-->C:\Users\Stewart\AndroidStudioProjects\TrafficScotland3\app\src\main\AndroidManifest.xml:39:27-74
+50            </intent-filter>
+51        </activity>
+52        <activity
+52-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Stewart\.gradle\caches\transforms-2\files-2.1\e2c213d4dfcecf7d0961805c3c2450f7\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+53            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+53-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Stewart\.gradle\caches\transforms-2\files-2.1\e2c213d4dfcecf7d0961805c3c2450f7\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+54            android:exported="false"
+54-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Stewart\.gradle\caches\transforms-2\files-2.1\e2c213d4dfcecf7d0961805c3c2450f7\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+55            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+55-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Stewart\.gradle\caches\transforms-2\files-2.1\e2c213d4dfcecf7d0961805c3c2450f7\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+56
+57        <provider
+57-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Stewart\.gradle\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+58            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+58-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Stewart\.gradle\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+59            android:authorities="com.example.trafficscotland.lifecycle-process"
+59-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Stewart\.gradle\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+60            android:exported="false"
+60-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Stewart\.gradle\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+61            android:multiprocess="true" />
+61-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Stewart\.gradle\caches\transforms-2\files-2.1\090434a1b2305b2572c380a8c896bb3c\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+62    </application>
+63
+64</manifest>
