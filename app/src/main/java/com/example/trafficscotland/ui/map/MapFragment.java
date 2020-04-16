@@ -38,6 +38,7 @@ public class MapFragment extends Fragment {
         SectionsPageAdaptor adaptor = new SectionsPageAdaptor(getChildFragmentManager());
         adaptor.addFragment(new MapTab1Fragment(), "Map View");
         adaptor.addFragment(new MapsTab2Fragment(), "Journey Planner");
+        adaptor.addFragment(new MapsTab2Fragment(), "Public Transit");
         ViewPager.setAdapter(adaptor);
     }
 }
