@@ -1,3 +1,7 @@
+/**
+ * @author Stewart McCafferty S1738575
+ * @version 1.1.1
+ */
 package com.example.trafficscotland.ui.map;
 
 import android.os.Bundle;
@@ -37,8 +41,6 @@ import javax.xml.parsers.DocumentBuilderFactory;
 public class MapTab1Fragment extends Fragment implements OnMapReadyCallback {
 
     private static final int TAG_CODE_PERMISSION_LOCATION =0006 ;
-    private MapViewModel MapViewModel;
-
     private MapView MapView;
 
     ClusterManager<AppClusterItem> mClusterManager;

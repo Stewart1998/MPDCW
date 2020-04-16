@@ -1,3 +1,8 @@
+/**
+ * @author Stewart McCafferty S1738575
+ * @version 1.1.1
+ */
+
 package com.example.trafficscotland.ui.twitter;
 
 import android.os.Bundle;
@@ -106,6 +111,12 @@ public class TwitterFragment extends Fragment {
         DialogFragment newFragment = MyDialogFragment.newInstance(4, args);
         newFragment.show(ft, "dialog");
     }
+
+    /**
+     * AsyncTask to pull twitter data from RSS feed
+     * @return ArrayList incidents
+     */
+
 
     private class AsyncTask extends android.os.AsyncTask<Integer, Integer, ArrayList<Spanned>> {
 

@@ -8,9 +8,11 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:id="@+id/searchFilter"
-        android:hint="Filter" />
+        android:hint="Search Incidents"
+        android:padding="20dp"
+        />
 
     <ListView
         android:id="@+id/incidents_feed"

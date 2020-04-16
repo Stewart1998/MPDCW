@@ -1,8 +1,11 @@
+/**
+ * @author Stewart McCafferty S1738575
+ * @version 1.1.1
+ */
 package com.example.trafficscotland;
 
 import android.Manifest;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -20,8 +23,6 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -58,13 +59,15 @@ public class MainActivity extends AppCompatActivity {
             NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
             NavigationUI.setupWithNavController(navView, navController);
 
-            if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
-                Toast.makeText(this, "Permission Granted", Toast.LENGTH_SHORT).show();
-        }else{
+            if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
                 requestPermission();
             }
     }
 
+
+    /**
+     * Gets permission to access users location
+     */
 private void requestPermission(){
         if(ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_FINE_LOCATION)){
             new AlertDialog.Builder(this)
@@ -88,6 +91,10 @@ private void requestPermission(){
     }
 }
 
+    /**
+     * Gets permission result set
+     */
+
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if(requestCode == STORAGE_PERMISSION_CODE){
@@ -98,19 +105,4 @@ private void requestPermission(){
             }
         }
     }
-
-    public boolean isServicesOK(){
-        int available = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(MainActivity.this);
-
-        if(available == ConnectionResult.SUCCESS){
-            return true;
-        }else if(GoogleApiAvailability.getInstance().isUserResolvableError(available)) {
-            Dialog Dialog = GoogleApiAvailability.getInstance().getErrorDialog(MainActivity.this, available, ERROR_DIALOG_REQUEST);
-            Dialog.show();
-        }else{
-            Toast.makeText(this, "An Error has occured!", Toast.LENGTH_SHORT).show();
-        }
-        return false;
-    }
-
 }

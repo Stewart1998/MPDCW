@@ -1,3 +1,7 @@
+/**
+ * @author Stewart McCafferty S1738575
+ * @version 1.1.1
+ */
 package com.example.trafficscotland.dialog;
 
 import android.app.Dialog;
@@ -74,7 +78,7 @@ public class MyDialogFragment extends DialogFragment {
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,  Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_marker_info, container, false);
+        View view = inflater.inflate(R.layout.fragment_dialog, container, false);
 
         ListView = (android.widget.ListView) view.findViewById(R.id.incidents_feed);
 

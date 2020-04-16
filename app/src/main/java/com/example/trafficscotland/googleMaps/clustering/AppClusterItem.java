@@ -4,9 +4,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.clustering.ClusterItem;
 
 /**
- * Created by Dimitar Danailov on 6/3/15.
- * email: dimityr.danailov@gmail.com
- *
+ * @author Dimitar Danailov on 6/3/15.
+ * Adapted using starter code from Google Developes
  * Documentation: https://developers.google.com/maps/documentation/android/utility/marker-clustering
  */
 public class AppClusterItem implements ClusterItem {

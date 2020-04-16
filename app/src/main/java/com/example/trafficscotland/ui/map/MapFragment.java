@@ -1,3 +1,7 @@
+/**
+ * @author Stewart McCafferty S1738575
+ * @version 1.1.1
+ */
 package com.example.trafficscotland.ui.map;
 
 import android.os.Bundle;
@@ -38,7 +42,6 @@ public class MapFragment extends Fragment {
         SectionsPageAdaptor adaptor = new SectionsPageAdaptor(getChildFragmentManager());
         adaptor.addFragment(new MapTab1Fragment(), "Map View");
         adaptor.addFragment(new MapsTab2Fragment(), "Journey Planner");
-        adaptor.addFragment(new MapsTab2Fragment(), "Public Transit");
         ViewPager.setAdapter(adaptor);
     }
 }

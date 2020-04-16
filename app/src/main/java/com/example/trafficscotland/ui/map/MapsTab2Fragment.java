@@ -1,3 +1,7 @@
+/**
+ * @author Stewart McCafferty S1738575
+ * @version 1.1.1
+ */
 package com.example.trafficscotland.ui.map;
 
 import android.os.Bundle;
@@ -10,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -59,8 +64,16 @@ public class MapsTab2Fragment extends Fragment {
                 VALUE = EditText.getText().toString();
                 VALUE2 = EditText2.getText().toString();
 
+                if(!VALUE.equals("")) {
+                    new MapsTab2Fragment.AsyncTask().execute();
+                }else{
+                    getActivity().runOnUiThread(new Runnable() {
+                        public void run() {
+                            Toast.makeText(getActivity(), "Please enter a date!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
 
-                new MapsTab2Fragment.AsyncTask().execute();
+                }
             }
         });
 

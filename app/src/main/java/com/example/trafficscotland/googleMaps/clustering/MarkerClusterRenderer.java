@@ -13,6 +13,12 @@ import com.google.maps.android.clustering.ClusterManager;
 import com.google.maps.android.clustering.view.DefaultClusterRenderer;
 import com.google.maps.android.ui.IconGenerator;
 
+/**
+ * @author Stewart McCafferty S1738575
+ * Adapted using starter code from Google Developes
+ * Documentation: https://developers.google.com/maps/documentation/android/utility/marker-clustering
+ */
+
 public class MarkerClusterRenderer extends DefaultClusterRenderer<AppClusterItem> {   // 1
     private static final int MARKER_DIMENSION = 70;  // 2
     private final IconGenerator iconGenerator;

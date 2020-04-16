@@ -1,3 +1,8 @@
+/**
+ * @author Stewart McCafferty S1738575
+ * @version 1.1.1
+ */
+
 package com.example.trafficscotland.ui.incidents;
 
 import android.os.Bundle;
@@ -35,8 +40,6 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 
 public class IncidentsFragment extends Fragment {
-
-    IncidentsViewModel IncidentsViewModel;
 
     ArrayList<Spanned> incidents = new ArrayList<Spanned>();
 
@@ -117,6 +120,11 @@ public class IncidentsFragment extends Fragment {
     }
 
 
+    /**
+     * AsyncTask to pull RSS data from feed
+     * @return ArrayList incidents
+     */
+
     private class AsyncTask extends android.os.AsyncTask<Integer, Integer, ArrayList<Spanned>> {
         @Override
         protected ArrayList<Spanned> doInBackground(Integer... integers) {
@@ -175,11 +183,6 @@ public class IncidentsFragment extends Fragment {
             }
             catch (Exception e)
             {
-                getActivity().runOnUiThread(new Runnable() {
-                    public void run() {
-                        Toast.makeText(getActivity(), "Error has Occurred", Toast.LENGTH_SHORT).show();
-                    }
-                });
                 System.out.println("Error...." + e.getMessage());
             }
 
