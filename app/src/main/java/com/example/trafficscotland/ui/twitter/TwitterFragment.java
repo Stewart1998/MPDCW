@@ -64,9 +64,6 @@ public class TwitterFragment extends Fragment {
                 args.putString("title", "TWITTER");
                 args.putString("description", selectedFromList);
 
-
-
-
                 showDialog(args);
             }
         });
@@ -176,23 +173,6 @@ public class TwitterFragment extends Fragment {
 
             return null;
 
-        }
-
-        void showDialog(Bundle args) {
-
-            // DialogFragment.show() will take care of adding the fragment
-            // in a transaction.  We also want to remove any currently showing
-            // dialog, so make our own transaction and take care of that here.
-            FragmentTransaction ft = getFragmentManager().beginTransaction();
-            Fragment prev = getFragmentManager().findFragmentByTag("dialog");
-            if (prev != null) {
-                ft.remove(prev);
-            }
-            ft.addToBackStack(null);
-
-            // Create and show the dialog.
-            DialogFragment newFragment = MyDialogFragment.newInstance(4, args);
-            newFragment.show(ft, "dialog");
         }
 
 

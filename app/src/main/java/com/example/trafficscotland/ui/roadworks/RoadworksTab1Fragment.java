@@ -40,7 +40,7 @@ public class RoadworksTab1Fragment extends Fragment {
 
     ArrayList<Spanned> incidents = new ArrayList<Spanned>();
 
-    android.widget.ListView ListView; EditText theFilter;
+    ListView ListView; EditText theFilter;
 
     ArrayAdapter<Spanned> ArrayAdapter;
 

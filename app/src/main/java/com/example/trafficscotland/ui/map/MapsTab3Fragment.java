@@ -31,7 +31,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 
-public class MapsTab2Fragment extends Fragment {
+public class MapsTab3Fragment extends Fragment {
     EditText EditText; ListView ListView; Button Button;EditText EditText2;Button Button2;
     ArrayList<Spanned> ArrayList = new ArrayList<Spanned>();
     ArrayAdapter<Spanned>ArrayAdapter;
@@ -60,7 +60,7 @@ public class MapsTab2Fragment extends Fragment {
                 VALUE2 = EditText2.getText().toString();
 
 
-                new MapsTab2Fragment.AsyncTask().execute();
+                new MapsTab3Fragment.AsyncTask().execute();
             }
         });
 
@@ -191,7 +191,7 @@ public class MapsTab2Fragment extends Fragment {
                 );
 
 
-                (MapsTab2Fragment.this).ArrayAdapter.getFilter().filter(VALUE2);
+                (MapsTab3Fragment.this).ArrayAdapter.getFilter().filter(VALUE2);
 
                 ListView.setAdapter(ArrayAdapter);
 

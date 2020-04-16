@@ -6,19 +6,70 @@
     android:orientation="vertical"
     android:layout_height="match_parent">
 
-    <EditText
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:id="@+id/toDate"
-        android:hint="Filter"
-        />
+        android:layout_height="wrap_content"
+        android:text="Please enter the date you wish to travel;" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today" />
+
+
+    </LinearLayout>
+
+
 
     <EditText
+        android:id="@+id/editText2"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:id="@+id/fromDate"
-        android:hint="Filter"
-        />
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Filter by road name"/>
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Info" />
+
+
+
+
+    <ListView
+        android:id="@+id/incidents_feed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </HorizontalScrollView>
 
 </LinearLayout>
